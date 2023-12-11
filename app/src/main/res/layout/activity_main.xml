@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/igor"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/containerLogin"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/container_edita_texto_login"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.498" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="270dp"
+        android:layout_height="59dp"
+        android:text="cadrastra"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#009688"
+        android:textColorLink="#FFC107"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="70dp"
+        tools:layout_editor_absoluteY="457dp" />
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Musica  App"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/containerLogin"
+        app:layout_constraintStart_toStartOf="@id/containerLogin"
+        app:layout_constraintTop_toTopOf="@id/containerLogin" />
+
+    <TextView
+        android:id="@+id/textDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="#FFC107"
+        android:text="Cadrastro"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/containerLogin"
+        app:layout_constraintStart_toStartOf="@id/containerLogin"
+        app:layout_constraintTop_toBottomOf="@id/txtTitle" />
+
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="359dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/contaire_login"
+        android:hint="Digite seu Nome"
+        android:padding="15dp"
+        android:shadowColor="#3E4FAC"
+        android:textColor="#121111"
+        app:layout_constraintBottom_toTopOf="@+id/editTextText2"
+        tools:layout_editor_absoluteX="26dp" />
+
+    <EditText
+        android:id="@+id/editTextText2"
+        android:layout_width="359dp"
+        android:layout_height="0dp"
+        android:background="@drawable/contaire_login"
+        android:hint="Digite seu Gmail"
+        android:padding="15dp"
+        android:textColorHighlight="#9C27B0"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="317dp" />
+
+    <EditText
+        android:id="@+id/editTextText3"
+        android:layout_width="359dp"
+        android:layout_height="0dp"
+        android:background="@drawable/contaire_login"
+        android:hint="Digite sua Senha"
+        android:padding="15dp"
+        android:textColorHighlight="#9C27B0"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="379dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
